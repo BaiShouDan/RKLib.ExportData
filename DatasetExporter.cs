@@ -73,7 +73,7 @@ namespace RKLib.DatasetExporter
 	{
 
 
-        internal  enum ExportFormat
+        public  enum ExportFormat
         { 
             Csv = 1,
             Excel = 2 
@@ -185,7 +185,7 @@ namespace RKLib.DatasetExporter
 		//			   exorts in CSV / Excel format with specified columns
 
 
-		internal void ExportDetails
+		public void ExportDetails
             (DataTable detailsTable,
             int[] columnList, ExportFormat FormatType,
             string FileName)
@@ -270,7 +270,7 @@ namespace RKLib.DatasetExporter
 		//			   exorts in CSV / Excel format with specified columns and 
 		//			   with specified headers
 
-        internal void ExportDetails
+        public void ExportDetails
             (DataTable detailsTable, int[] columnList,
             string[] headers, ExportFormat FormatType,
             string FileName)
